@@ -69,9 +69,9 @@ const App = () => {
     const participantsCol = collection(db, 'artifacts', appId, 'public', 'data', 'participants');
     const unsubscribe = onSnapshot(participantsCol, 
       (snapshot) => {
-        const list = snapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
+        const list = snapshot.docs.map(d => ({
+          id: d.id,
+          ...d.data()
         }));
         setParticipants(list.sort((a, b) => {
           if (a.grade !== b.grade) {
