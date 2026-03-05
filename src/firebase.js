@@ -8,12 +8,13 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "여기에_입력",
-  authDomain: "여기에_입력",
-  projectId: "여기에_입력",
-  storageBucket: "여기에_입력",
-  messagingSenderId: "여기에_입력",
-  appId: "여기에_입력"
+  apiKey: "AIzaSyBVPnfyKiLEzXGC5ovm3H8eXALtne7yCrw",
+  authDomain: "project-9096563110778400253.firebaseapp.com",
+  projectId: "project-9096563110778400253",
+  storageBucket: "project-9096563110778400253.firebasestorage.app",
+  messagingSenderId: "769311374003",
+  appId: "1:769311374003:web:47cf55515bd5ae9d598ec6",
+  measurementId: "G-9ZCR91S3QC"
 };
 
 const app = initializeApp(firebaseConfig);
